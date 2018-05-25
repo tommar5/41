@@ -2,9 +2,11 @@
  * @(#) OrderController.cs
  */
 
+using Microsoft.AspNetCore.Mvc;
+
 namespace RSP.Controllers
 {
-    public class OrderController
+    public class OrderController : Controller
     {
         CartController cartController;
         

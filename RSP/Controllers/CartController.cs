@@ -2,9 +2,11 @@
  * @(#) CartController.cs
  */
 
+using Microsoft.AspNetCore.Mvc;
+
 namespace RSP.Controllers
 {
-    public class CartController
+    public class CartController : Controller
     {
         Models.Cart_Item cartItem;
         

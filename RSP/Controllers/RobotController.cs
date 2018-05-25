@@ -2,9 +2,11 @@
  * @(#) RobotController.cs
  */
 
+using Microsoft.AspNetCore.Mvc;
+
 namespace RSP.Controllers
 {
-    public class RobotController
+    public class RobotController : Controller
     {
         Models.Robot robot;
         

@@ -2,9 +2,11 @@
  * @(#) InventoryController.cs
  */
 
+using Microsoft.AspNetCore.Mvc;
+
 namespace RSP.Controllers
 {
-    public class InventoryController
+    public class InventoryController : Controller
     {
         Models.Inventory Inventory;
         

@@ -2,9 +2,11 @@
  * @(#) RobotWorkController.cs
  */
 
+using Microsoft.AspNetCore.Mvc;
+
 namespace RSP.Controllers
 {
-    public class RobotWorkController
+    public class RobotWorkController : Controller
     {
         Models.Inventory inventory;
         

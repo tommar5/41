@@ -2,9 +2,11 @@
  * @(#) UserController.cs
  */
 
+using Microsoft.AspNetCore.Mvc;
+
 namespace RSP.Controllers
 {
-    public class UserController
+    public class UserController : Controller
     {
         Models.User user;
         
