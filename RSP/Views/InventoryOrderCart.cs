@@ -2,11 +2,11 @@
  * @(#) InventoryOrderCart.cs
  */
 
-namespace View.InventoryManagement
+namespace RSP.Views
 {
     public class InventoryOrderCart
     {
-        Controller.CartController CartController;
+        Controllers.CartController CartController;
         
         public void checkOutCart( int userId )
         {

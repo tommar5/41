@@ -2,15 +2,15 @@
  * @(#) ManagerMain.cs
  */
 
-namespace View.MainViews
+namespace RSP.Views
 {
     public class ManagerMain
     {
-        Controller.CartController cartController;
+        Controllers.CartController cartController;
         
-        Controller.InventoryController inventoryController;
+        Controllers.InventoryController inventoryController;
         
-        Controller.OrderController orderController;
+        Controllers.OrderController orderController;
         
         public void getInventoryList(  )
         {

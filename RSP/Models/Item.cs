@@ -2,7 +2,7 @@
  * @(#) Item.cs
  */
 
-namespace Model
+namespace RSP.Models
 {
     public class Item
     {

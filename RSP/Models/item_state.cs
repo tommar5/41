@@ -2,7 +2,7 @@
  * @(#) item_state.cs
  */
 
-namespace Model
+namespace RSP.Models
 {
     public enum item_state
     {

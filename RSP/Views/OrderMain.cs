@@ -2,7 +2,7 @@
  * @(#) OrderMain.cs
  */
 
-namespace View.OrderManagement
+namespace RSP.Views
 {
     public class OrderMain
     {

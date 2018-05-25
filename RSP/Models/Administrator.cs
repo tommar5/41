@@ -2,7 +2,7 @@
  * @(#) Administrator.cs
  */
 
-namespace Model
+namespace RSP.Models
 {
     public class Administrator : User
     {

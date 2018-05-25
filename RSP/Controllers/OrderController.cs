@@ -8,11 +8,11 @@ namespace RSP.Controllers
     {
         CartController cartController;
         
-        Model.Order order;
+        Models.Order order;
         
-        Model.Cart_Item cartItem;
+        Models.Cart_Item cartItem;
         
-        Model.Payment payment;
+        Models.Payment payment;
         
         public void addInventoryToCart( int inventoryId, int userId )
         {
@@ -29,7 +29,7 @@ namespace RSP.Controllers
             
         }
         
-        public Model.Order createInventoryOrder(  )
+        public Models.Order createInventoryOrder(  )
         {
             return null;
         }
@@ -39,17 +39,17 @@ namespace RSP.Controllers
             
         }
         
-        public Model.Inventory[] getInventoryOrderList(  )
+        public Models.Inventory[] getInventoryOrderList(  )
         {
             return null;
         }
         
-        public Model.Inventory getInventoryOrderDetails( int id )
+        public Models.Inventory getInventoryOrderDetails( int id )
         {
             return null;
         }
         
-        public Model.Order getOrderDetails( int id )
+        public Models.Order getOrderDetails( int id )
         {
             return null;
         }
@@ -59,12 +59,12 @@ namespace RSP.Controllers
             
         }
         
-        public Model.Order[] getOrders(  )
+        public Models.Order[] getOrders(  )
         {
             return null;
         }
         
-        public Model.Order createOrder( int id )
+        public Models.Order createOrder( int id )
         {
             return null;
         }
@@ -76,7 +76,7 @@ namespace RSP.Controllers
         
         public bool canUpdate(  )
         {
-            return null;
+            return true;
         }
         
     }

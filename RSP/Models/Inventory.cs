@@ -2,7 +2,7 @@
  * @(#) Inventory.cs
  */
 
-namespace Model
+namespace RSP.Models
 {
     public class Inventory
     {

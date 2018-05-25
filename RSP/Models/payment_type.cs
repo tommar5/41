@@ -2,7 +2,7 @@
  * @(#) payment_type.cs
  */
 
-namespace Model
+namespace RSP.Models
 {
     public enum payment_type
     {

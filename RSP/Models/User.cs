@@ -2,7 +2,7 @@
  * @(#) User.cs
  */
 
-namespace Model
+namespace RSP.Models
 {
     public class User
     {
@@ -22,7 +22,7 @@ namespace Model
             
         }
         
-        public void updateUser( projektas_2._Old.Model.User user )
+        public void updateUser( User user )
         {
             
         }

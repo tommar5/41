@@ -2,7 +2,7 @@
  * @(#) Courier.cs
  */
 
-namespace Model
+namespace RSP.Models
 {
     public class Courier
     {

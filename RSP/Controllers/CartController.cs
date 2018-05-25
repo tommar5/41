@@ -6,14 +6,14 @@ namespace RSP.Controllers
 {
     public class CartController
     {
-        Model.Cart_Item cartItem;
+        Models.Cart_Item cartItem;
         
         public void addInventoryOrderToCart( int inventoryId, int userId )
         {
             
         }
         
-        public projektas_2._Old.Model.Cart_Item[] getInventoryOrderCartList( int userId )
+        public Models.Cart_Item[] getInventoryOrderCartList( int userId )
         {
             return null;
         }
@@ -28,7 +28,7 @@ namespace RSP.Controllers
             
         }
         
-        public projektas_2._Old.Model.Cart_Item[] getItemOrderCartList( int userId )
+        public Models.Cart_Item[] getItemOrderCartList( int userId )
         {
             return null;
         }
@@ -38,7 +38,7 @@ namespace RSP.Controllers
             
         }
         
-        public projektas_2._Old.Model.Cart_Item getCartList(  )
+        public Models.Cart_Item getCartList(  )
         {
             return null;
         }

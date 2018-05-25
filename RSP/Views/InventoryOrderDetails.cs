@@ -2,7 +2,7 @@
  * @(#) InventoryOrderDetails.cs
  */
 
-namespace View.InventoryManagement
+namespace RSP.Views
 {
     public class InventoryOrderDetails
     {

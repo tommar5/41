@@ -2,13 +2,13 @@
  * @(#) UserForm.cs
  */
 
-namespace View.UserManagement
+namespace RSP.Views
 {
     public class UserForm
     {
-        Controller.UserController userController;
+        Controllers.UserController userController;
         
-        public void addUser( Model.User user )
+        public void addUser( Models.User user )
         {
             
         }

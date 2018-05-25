@@ -2,23 +2,23 @@
  * @(#) InventoryList.cs
  */
 
-namespace View.InventoryManagement
+namespace RSP.Views
 {
     public class InventoryList
     {
-        Controller.InventoryController InventoryController;
+        Controllers.InventoryController InventoryController;
         
         public void showInventoryList(  )
         {
             
         }
         
-        public Model.Inventory getInvetory(  )
+        public Models.Inventory getInvetory(  )
         {
             return null;
         }
         
-        public Model.Inventory getInventoryDetails( int id )
+        public Models.Inventory getInventoryDetails( int id )
         {
             return null;
         }

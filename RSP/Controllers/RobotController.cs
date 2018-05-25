@@ -6,21 +6,21 @@ namespace RSP.Controllers
 {
     public class RobotController
     {
-        Model.Robot robot;
+        Models.Robot robot;
         
-        Model.Robot_Type robotType;
+        Models.Robot_Type robotType;
         
-        public Model.Robot getRobotsList(  )
+        public Models.Robot getRobotsList(  )
         {
             return null;
         }
         
-        public Model.Robot getRobotDetails( int id )
+        public Models.Robot getRobotDetails( int id )
         {
             return null;
         }
         
-        public Model.Robot createRobot(  )
+        public Models.Robot createRobot(  )
         {
             return null;
         }

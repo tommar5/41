@@ -2,20 +2,20 @@
  * @(#) InventoryOrderList.cs
  */
 
-namespace View.InventoryManagement
+namespace RSP.Views
 {
     public class InventoryOrderList
     {
-        Controller.CartController CartController;
+        Controllers.CartController CartController;
         
-        Controller.OrderController OrderController;
+        Controllers.OrderController OrderController;
         
         public void showInventoryOrderList(  )
         {
             
         }
         
-        public Model.Inventory getInventoryOrderDetails( int id )
+        public Models.Inventory getInventoryOrderDetails( int id )
         {
             return null;
         }

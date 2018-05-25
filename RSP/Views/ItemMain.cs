@@ -2,13 +2,13 @@
  * @(#) ItemMain.cs
  */
 
-namespace View.ItemManagement
+namespace RSP.Views
 {
     public class ItemMain
     {
-        Controller.ItemController ItemController;
+        Controllers.ItemController ItemController;
         
-        public Model.Item[] getItemList( string filters )
+        public Models.Item[] getItemList( string filters )
         {
             return null;
         }

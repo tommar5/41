@@ -2,13 +2,13 @@
  * @(#) Cart_Item.cs
  */
 
-namespace Model
+namespace RSP.Models
 {
     public class Cart_Item
     {
-        1 Reikalavimai.Esybiø modelis.Prekës modelis cartItem;
+        Cart_Item cartItem;
         
-        1 Reikalavimai.Esybiø modelis.Vartotojas user;
+        User user;
         
         string type;
         

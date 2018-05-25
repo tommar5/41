@@ -2,7 +2,7 @@
  * @(#) Customer.cs
  */
 
-namespace Model
+namespace RSP.Models
 {
     public class Customer : User
     {

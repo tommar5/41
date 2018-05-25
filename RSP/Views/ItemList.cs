@@ -2,18 +2,18 @@
  * @(#) ItemList.cs
  */
 
-namespace View.ItemManagement
+namespace RSP.Views
 {
     public class ItemList
     {
-        Controller.ItemController ItemController;
+        Controllers.ItemController ItemController;
         
-        public void showItemList( Model.Item[] items )
+        public void showItemList( Models.Item[] items )
         {
             
         }
         
-        public Model.Item getItemDetails( int id )
+        public Models.Item getItemDetails( int id )
         {
             return null;
         }

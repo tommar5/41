@@ -2,7 +2,7 @@
  * @(#) Robot.cs
  */
 
-namespace Model
+namespace RSP.Models
 {
     public class Robot
     {

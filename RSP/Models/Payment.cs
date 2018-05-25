@@ -2,13 +2,15 @@
  * @(#) Payment.cs
  */
 
-namespace Model
+using System;
+
+namespace RSP.Models
 {
     public class Payment
     {
         float suma;
         
-        date payment_date;
+        DateTime payment_date;
         
         string invoice_no;
         

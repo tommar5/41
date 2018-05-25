@@ -2,11 +2,11 @@
  * @(#) RobotList.cs
  */
 
-namespace View.RobotManagement
+namespace RSP.Views
 {
     public class RobotList
     {
-        Controller.RobotController robotController;
+        Controllers.RobotController robotController;
         
         public void getRobotsList(  )
         {

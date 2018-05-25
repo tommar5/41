@@ -6,13 +6,13 @@ namespace RSP.Controllers
 {
     public class RobotWorkController
     {
-        Model.Inventory inventory;
+        Models.Inventory inventory;
         
-        Model.Order order;
+        Models.Order order;
         
-        Model.Item item;
+        Models.Item item;
         
-        Model.Robot robot;
+        Models.Robot robot;
         
         public void getWorksList(  )
         {
@@ -94,12 +94,12 @@ namespace RSP.Controllers
             
         }
         
-        public void checkIfOrderFullyCollected( Model.Order order )
+        public void checkIfOrderFullyCollected( Models.Order order )
         {
             
         }
         
-        public void getItemFromOrder( Model.Order order )
+        public void getItemFromOrder( Models.Order order )
         {
             
         }

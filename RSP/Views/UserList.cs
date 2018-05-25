@@ -2,11 +2,11 @@
  * @(#) UserList.cs
  */
 
-namespace View.UserManagement
+namespace RSP.Views
 {
     public class UserList
     {
-        Controller.UserController userController;
+        Controllers.UserController userController;
         
         public void showUserList(  )
         {

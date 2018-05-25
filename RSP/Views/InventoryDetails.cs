@@ -2,11 +2,11 @@
  * @(#) InventoryDetails.cs
  */
 
-namespace View.InventoryManagement
+namespace RSP.Views
 {
     public class InventoryDetails
     {
-        Controller.InventoryController InventoryController;
+        Controllers.InventoryController InventoryController;
         
         public void showInvetoryDetails(  )
         {
@@ -15,7 +15,7 @@ namespace View.InventoryManagement
         
         public int addToCart( int inventoryId, int userId )
         {
-            return null;
+            return 1;
         }
         
     }

@@ -2,11 +2,13 @@
  * @(#) Order.cs
  */
 
-namespace Model
+using System;
+
+namespace RSP.Models
 {
     public class Order
     {
-        date date;
+        DateTime date;
         
         order_state state;
         
