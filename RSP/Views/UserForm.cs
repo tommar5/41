@@ -2,13 +2,13 @@
  * @(#) UserForm.cs
  */
 
-namespace projektas_2.MVC.View.UserManagement
+namespace View.UserManagement
 {
     public class UserForm
     {
-        projektas_2.MVC.Controller.UserController userController;
+        Controller.UserController userController;
         
-        public void addUser( projektas_2.MVC.Model.User user )
+        public void addUser( Model.User user )
         {
             
         }

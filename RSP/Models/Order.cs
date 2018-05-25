@@ -2,7 +2,7 @@
  * @(#) Order.cs
  */
 
-namespace projektas_2.MVC.Model
+namespace Model
 {
     public class Order
     {
@@ -16,7 +16,7 @@ namespace projektas_2.MVC.Model
         
         Courier courier;
         
-        String info;
+        string info;
         
         Payment payment;
         

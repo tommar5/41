@@ -2,17 +2,17 @@
  * @(#) Supplier.cs
  */
 
-namespace projektas_2.MVC.Model
+namespace Model
 {
     public class Supplier
     {
-        String name;
+        string name;
         
         Item item;
         
-        String address;
+        string address;
         
-        String info;
+        string info;
         
     }
     

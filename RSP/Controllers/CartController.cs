@@ -2,38 +2,38 @@
  * @(#) CartController.cs
  */
 
-namespace projektas_2.MVC.Controller
+namespace RSP.Controllers
 {
     public class CartController
     {
-        projektas_2.MVC.Model.Cart_Item cartItem;
+        Model.Cart_Item cartItem;
         
-        public void addInventoryOrderToCart( Integer inventoryId, Integer userId )
+        public void addInventoryOrderToCart( int inventoryId, int userId )
         {
             
         }
         
-        public projektas_2._Old.Model.Cart_Item[] getInventoryOrderCartList( Integer userId )
+        public projektas_2._Old.Model.Cart_Item[] getInventoryOrderCartList( int userId )
         {
             return null;
         }
         
-        public void deleteInventoryOrderFromCart( Integer inventoryId, Integer userId )
+        public void deleteInventoryOrderFromCart( int inventoryId, int userId )
         {
             
         }
         
-        public void addItemOrderToCart( Integer inventoryId, Integer userId )
+        public void addItemOrderToCart( int inventoryId, int userId )
         {
             
         }
         
-        public projektas_2._Old.Model.Cart_Item[] getItemOrderCartList( Integer userId )
+        public projektas_2._Old.Model.Cart_Item[] getItemOrderCartList( int userId )
         {
             return null;
         }
         
-        public void deleteItemOrderFromCart( Integer inventoryId, Integer userId )
+        public void deleteItemOrderFromCart( int inventoryId, int userId )
         {
             
         }
@@ -48,7 +48,7 @@ namespace projektas_2.MVC.Controller
             
         }
         
-        public void removeFromCart( Integer id )
+        public void removeFromCart( int id )
         {
             
         }
@@ -58,7 +58,7 @@ namespace projektas_2.MVC.Controller
             
         }
         
-        public void updateItemCount( Integer id )
+        public void updateItemCount( int id )
         {
             
         }

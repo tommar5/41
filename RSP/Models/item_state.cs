@@ -2,7 +2,7 @@
  * @(#) item_state.cs
  */
 
-namespace projektas_2.MVC.Model
+namespace Model
 {
     public enum item_state
     {

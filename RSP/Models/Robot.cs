@@ -2,13 +2,13 @@
  * @(#) Robot.cs
  */
 
-namespace projektas_2.MVC.Model
+namespace Model
 {
     public class Robot
     {
         robot_state state;
         
-        String position;
+        string position;
         
         Inventory inventory;
         

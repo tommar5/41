@@ -2,13 +2,13 @@
  * @(#) Robot_Type.cs
  */
 
-namespace projektas_2.MVC.Model
+namespace Model
 {
     public class Robot_Type
     {
-        String type;
+        string type;
         
-        String description;
+        string description;
         
         Robot robot;
         

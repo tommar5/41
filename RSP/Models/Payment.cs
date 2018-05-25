@@ -2,7 +2,7 @@
  * @(#) Payment.cs
  */
 
-namespace projektas_2.MVC.Model
+namespace Model
 {
     public class Payment
     {
@@ -10,7 +10,7 @@ namespace projektas_2.MVC.Model
         
         date payment_date;
         
-        String invoice_no;
+        string invoice_no;
         
         Order payment;
         

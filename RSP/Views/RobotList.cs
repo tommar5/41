@@ -2,11 +2,11 @@
  * @(#) RobotList.cs
  */
 
-namespace projektas_2.MVC.View.RobotManagement
+namespace View.RobotManagement
 {
     public class RobotList
     {
-        projektas_2.MVC.Controller.RobotController robotController;
+        Controller.RobotController robotController;
         
         public void getRobotsList(  )
         {
@@ -38,22 +38,22 @@ namespace projektas_2.MVC.View.RobotManagement
             
         }
         
-        public void getRobotDetails( Integer id )
+        public void getRobotDetails( int id )
         {
             
         }
         
-        public void redirectRobotToGarage( Integer id )
+        public void redirectRobotToGarage( int id )
         {
             
         }
         
-        public void turnOnRobot( Integer id )
+        public void turnOnRobot( int id )
         {
             
         }
         
-        public void turnOffRobot( Integer id )
+        public void turnOffRobot( int id )
         {
             
         }

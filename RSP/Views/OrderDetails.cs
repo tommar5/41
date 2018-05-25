@@ -2,16 +2,16 @@
  * @(#) OrderDetails.cs
  */
 
-namespace projektas_2.MVC.View.OrderManagement
+namespace View.OrderManagement
 {
     public class OrderDetails
     {
-        public void showOrderDetails( Integer id )
+        public void showOrderDetails( int id )
         {
             
         }
         
-        public void changeState( Integer id )
+        public void changeState( int id )
         {
             
         }

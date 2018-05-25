@@ -2,7 +2,7 @@
  * @(#) Buy.cs
  */
 
-namespace projektas_2.MVC.View.OrderManagement
+namespace View.OrderManagement
 {
     public class Buy
     {

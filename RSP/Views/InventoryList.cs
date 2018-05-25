@@ -2,23 +2,23 @@
  * @(#) InventoryList.cs
  */
 
-namespace projektas_2.MVC.View.InventoryManagement
+namespace View.InventoryManagement
 {
     public class InventoryList
     {
-        projektas_2.MVC.Controller.InventoryController InventoryController;
+        Controller.InventoryController InventoryController;
         
         public void showInventoryList(  )
         {
             
         }
         
-        public projektas_2.MVC.Model.Inventory getInvetory(  )
+        public Model.Inventory getInvetory(  )
         {
             return null;
         }
         
-        public projektas_2.MVC.Model.Inventory getInventoryDetails( Integer id )
+        public Model.Inventory getInventoryDetails( int id )
         {
             return null;
         }

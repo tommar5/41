@@ -2,7 +2,7 @@
  * @(#) OrderList.cs
  */
 
-namespace projektas_2.MVC.View.OrderManagement
+namespace View.OrderManagement
 {
     public class OrderList
     {
@@ -11,7 +11,7 @@ namespace projektas_2.MVC.View.OrderManagement
             
         }
         
-        public void getOrderDetails( Integer id )
+        public void getOrderDetails( int id )
         {
             
         }

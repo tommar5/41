@@ -2,18 +2,18 @@
  * @(#) RobotWork.cs
  */
 
-namespace projektas_2.MVC.View.RobotWork
+namespace View.RobotWork
 {
     public class RobotWork
     {
-        projektas_2.MVC.Controller.RobotWorkController robotWorkController;
+        Controller.RobotWorkController robotWorkController;
         
         public void getWorksList(  )
         {
             
         }
         
-        public void deleteWork( Integer id )
+        public void deleteWork( int id )
         {
             
         }

@@ -2,17 +2,17 @@
  * @(#) RobotWorkController.cs
  */
 
-namespace projektas_2.MVC.Controller
+namespace RSP.Controllers
 {
     public class RobotWorkController
     {
-        projektas_2.MVC.Model.Inventory inventory;
+        Model.Inventory inventory;
         
-        projektas_2.MVC.Model.Order order;
+        Model.Order order;
         
-        projektas_2.MVC.Model.Item item;
+        Model.Item item;
         
-        projektas_2.MVC.Model.Robot robot;
+        Model.Robot robot;
         
         public void getWorksList(  )
         {
@@ -64,7 +64,7 @@ namespace projektas_2.MVC.Controller
             
         }
         
-        public void setWorkToRobot( Integer id )
+        public void setWorkToRobot( int id )
         {
             
         }
@@ -74,7 +74,7 @@ namespace projektas_2.MVC.Controller
             
         }
         
-        public void deleteWork( Integer id )
+        public void deleteWork( int id )
         {
             
         }
@@ -84,22 +84,22 @@ namespace projektas_2.MVC.Controller
             
         }
         
-        public void updateRobotWorkList( Integer id )
+        public void updateRobotWorkList( int id )
         {
             
         }
         
-        public void isOrderCollected( Integer id )
+        public void isOrderCollected( int id )
         {
             
         }
         
-        public void checkIfOrderFullyCollected( projektas_2.MVC.Model.Order order )
+        public void checkIfOrderFullyCollected( Model.Order order )
         {
             
         }
         
-        public void getItemFromOrder( projektas_2.MVC.Model.Order order )
+        public void getItemFromOrder( Model.Order order )
         {
             
         }

@@ -2,15 +2,15 @@
  * @(#) Courier.cs
  */
 
-namespace projektas_2.MVC.Model
+namespace Model
 {
     public class Courier
     {
         Order orders;
         
-        String name;
+        string name;
         
-        String info;
+        string info;
         
     }
     

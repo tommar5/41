@@ -2,18 +2,18 @@
  * @(#) RobotDetails.cs
  */
 
-namespace projektas_2.MVC.View.RobotManagement
+namespace View.RobotManagement
 {
     public class RobotDetails
     {
-        projektas_2.MVC.Controller.RobotController robotController;
+        Controller.RobotController robotController;
         
         public void showRobotDetails(  )
         {
             
         }
         
-        public void updateRobot( Integer id )
+        public void updateRobot( int id )
         {
             
         }

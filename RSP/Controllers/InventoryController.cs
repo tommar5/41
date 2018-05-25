@@ -2,18 +2,18 @@
  * @(#) InventoryController.cs
  */
 
-namespace projektas_2.MVC.Controller
+namespace RSP.Controllers
 {
     public class InventoryController
     {
-        projektas_2.MVC.Model.Inventory Inventory;
+        Model.Inventory Inventory;
         
-        public projektas_2.MVC.Model.Inventory[] getInventoryList(  )
+        public Model.Inventory[] getInventoryList(  )
         {
             return null;
         }
         
-        public projektas_2.MVC.Model.Inventory getInventoryDetails( Integer id )
+        public Model.Inventory getInventoryDetails( int id )
         {
             return null;
         }

@@ -2,40 +2,40 @@
  * @(#) ItemController.cs
  */
 
-namespace projektas_2.MVC.Controller
+namespace RSP.Controllers
 {
     public class ItemController
     {
-        projektas_2.MVC.Model.Inventory Inventory;
+        Model.Inventory Inventory;
         
-        projektas_2.MVC.Model.Item Item;
+        Model.Item Item;
         
-        public projektas_2.MVC.Model.Item[] getItemList(  )
+        public Model.Item[] getItemList(  )
         {
             return null;
         }
         
-        public projektas_2.MVC.Model.Item getItemDetails( Integer id )
+        public Model.Item getItemDetails( int id )
         {
             return null;
         }
         
-        public Integer createItem( projektas_2.MVC.Model.Item item )
+        public int createItem( Model.Item item )
         {
             return null;
         }
         
-        public Integer deleteItem( Integer id )
+        public int deleteItem( int id )
         {
             return null;
         }
         
-        public projektas_2.MVC.Model.Item updateItem( projektas_2.MVC.Model.Item item )
+        public Model.Item updateItem( Model.Item item )
         {
             return null;
         }
         
-        public Boolean checkIfValidItem( projektas_2.MVC.Model.Item item )
+        public Boolean checkIfValidItem( Model.Item item )
         {
             return null;
         }

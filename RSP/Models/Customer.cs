@@ -2,21 +2,21 @@
  * @(#) Customer.cs
  */
 
-namespace projektas_2.MVC.Model
+namespace Model
 {
     public class Customer : User
     {
-        String name;
+        string name;
         
-        String surname;
+        string surname;
         
-        String email;
+        string email;
         
-        String address;
+        string address;
         
         Order orders;
         
-        public void getCustomer( Integer id )
+        public void getCustomer( int id )
         {
             
         }
@@ -26,12 +26,12 @@ namespace projektas_2.MVC.Model
             
         }
         
-        public void updateCustomer( Integer id )
+        public void updateCustomer( int id )
         {
             
         }
         
-        public void removeCustomer( Integer id )
+        public void removeCustomer( int id )
         {
             
         }

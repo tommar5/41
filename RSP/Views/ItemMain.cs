@@ -2,13 +2,13 @@
  * @(#) ItemMain.cs
  */
 
-namespace projektas_2.MVC.View.ItemManagement
+namespace View.ItemManagement
 {
     public class ItemMain
     {
-        projektas_2.MVC.Controller.ItemController ItemController;
+        Controller.ItemController ItemController;
         
-        public projektas_2.MVC.Model.Item[] getItemList( String filters )
+        public Model.Item[] getItemList( string filters )
         {
             return null;
         }

@@ -2,7 +2,7 @@
  * @(#) Cart.cs
  */
 
-namespace projektas_2.MVC.View.OrderManagement
+namespace View.OrderManagement
 {
     public class Cart
     {
@@ -16,12 +16,12 @@ namespace projektas_2.MVC.View.OrderManagement
             
         }
         
-        public void updateItemAmount( Integer id )
+        public void updateItemAmount( int id )
         {
             
         }
         
-        public void removeFromCart( Integer id )
+        public void removeFromCart( int id )
         {
             
         }

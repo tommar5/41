@@ -2,7 +2,7 @@
  * @(#) payment_type.cs
  */
 
-namespace projektas_2.MVC.Model
+namespace Model
 {
     public enum payment_type
     {

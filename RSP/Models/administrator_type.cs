@@ -2,7 +2,7 @@
  * @(#) administrator_type.cs
  */
 
-namespace projektas_2.MVC.Model
+namespace Model
 {
     public enum administrator_type
     {

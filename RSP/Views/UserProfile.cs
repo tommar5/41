@@ -2,18 +2,18 @@
  * @(#) UserProfile.cs
  */
 
-namespace projektas_2.MVC.View.UserManagement
+namespace View.UserManagement
 {
     public class UserProfile
     {
-        projektas_2.MVC.Controller.UserController userController;
+        Controller.UserController userController;
         
-        public void showUserProfile( Integer id )
+        public void showUserProfile( int id )
         {
             
         }
         
-        public void updateUserProfile( Integer id )
+        public void updateUserProfile( int id )
         {
             
         }

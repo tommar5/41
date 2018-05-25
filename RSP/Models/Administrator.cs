@@ -2,7 +2,7 @@
  * @(#) Administrator.cs
  */
 
-namespace projektas_2.MVC.Model
+namespace Model
 {
     public class Administrator : User
     {
@@ -13,17 +13,17 @@ namespace projektas_2.MVC.Model
             
         }
         
-        public void removeAdmistrator( Integer id )
+        public void removeAdmistrator( int id )
         {
             
         }
         
-        public void updateAdministrator( Integer id )
+        public void updateAdministrator( int id )
         {
             
         }
         
-        public void getAdministrator( Integer id )
+        public void getAdministrator( int id )
         {
             
         }

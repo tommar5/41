@@ -2,7 +2,7 @@
  * @(#) Cart_Item.cs
  */
 
-namespace projektas_2.MVC.Model
+namespace Model
 {
     public class Cart_Item
     {
@@ -10,9 +10,9 @@ namespace projektas_2.MVC.Model
         
         1 Reikalavimai.Esybiø modelis.Vartotojas user;
         
-        String type;
+        string type;
         
-        Integer number;
+        int number;
         
         Item item;
         
@@ -36,12 +36,12 @@ namespace projektas_2.MVC.Model
             
         }
         
-        public void find( Integer itemId, Integer userId )
+        public void find( int itemId, int userId )
         {
             
         }
         
-        public void increment( Integer itemId, Integer userId )
+        public void increment( int itemId, int userId )
         {
             
         }

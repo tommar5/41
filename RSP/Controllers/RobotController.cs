@@ -2,35 +2,35 @@
  * @(#) RobotController.cs
  */
 
-namespace projektas_2.MVC.Controller
+namespace RSP.Controllers
 {
     public class RobotController
     {
-        projektas_2.MVC.Model.Robot robot;
+        Model.Robot robot;
         
-        projektas_2.MVC.Model.Robot_Type robotType;
+        Model.Robot_Type robotType;
         
-        public projektas_2.MVC.Model.Robot getRobotsList(  )
+        public Model.Robot getRobotsList(  )
         {
             return null;
         }
         
-        public projektas_2.MVC.Model.Robot getRobotDetails( Integer id )
+        public Model.Robot getRobotDetails( int id )
         {
             return null;
         }
         
-        public projektas_2.MVC.Model.Robot createRobot(  )
+        public Model.Robot createRobot(  )
         {
             return null;
         }
         
-        public void deleteRobot( Integer id )
+        public void deleteRobot( int id )
         {
             
         }
         
-        public void updateRobot( Integer id )
+        public void updateRobot( int id )
         {
             
         }
@@ -65,17 +65,17 @@ namespace projektas_2.MVC.Controller
             
         }
         
-        public void turnOnRobot( Integer id )
+        public void turnOnRobot( int id )
         {
             
         }
         
-        public void turnOffRobot( Integer id )
+        public void turnOffRobot( int id )
         {
             
         }
         
-        public void redirectRobotToGarage( Integer id )
+        public void redirectRobotToGarage( int id )
         {
             
         }

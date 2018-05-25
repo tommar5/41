@@ -2,22 +2,22 @@
  * @(#) UserController.cs
  */
 
-namespace projektas_2.MVC.Controller
+namespace RSP.Controllers
 {
     public class UserController
     {
-        projektas_2.MVC.Model.User user;
+        Model.User user;
         
-        projektas_2.MVC.Model.Administrator administrator;
+        Model.Administrator administrator;
         
-        projektas_2.MVC.Model.Customer customer;
+        Model.Customer customer;
         
-        public void addUser( projektas_2.MVC.Model.User user )
+        public void addUser( Model.User user )
         {
             
         }
         
-        public void removeUser( Integer id )
+        public void removeUser( int id )
         {
             
         }
@@ -27,12 +27,12 @@ namespace projektas_2.MVC.Controller
             
         }
         
-        public void updateUser( Integer id )
+        public void updateUser( int id )
         {
             
         }
         
-        public void changeRole( Integer id, String role )
+        public void changeRole( int id, string role )
         {
             
         }
@@ -42,7 +42,7 @@ namespace projektas_2.MVC.Controller
             
         }
         
-        public void isValid( projektas_2.MVC.Model.User user )
+        public void isValid( Model.User user )
         {
             
         }

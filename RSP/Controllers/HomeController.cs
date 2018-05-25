@@ -8,7 +8,7 @@ using RSP.Models;
 
 namespace RSP.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : Microsoft.AspNetCore.Mvc.Controller
     {
         public IActionResult Index()
         {

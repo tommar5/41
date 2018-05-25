@@ -2,34 +2,34 @@
  * @(#) OrderController.cs
  */
 
-namespace projektas_2.MVC.Controller
+namespace RSP.Controllers
 {
     public class OrderController
     {
         CartController cartController;
         
-        projektas_2.MVC.Model.Order order;
+        Model.Order order;
         
-        projektas_2.MVC.Model.Cart_Item cartItem;
+        Model.Cart_Item cartItem;
         
-        projektas_2.MVC.Model.Payment payment;
+        Model.Payment payment;
         
-        public void addInventoryToCart( Integer inventoryId, Integer userId )
+        public void addInventoryToCart( int inventoryId, int userId )
         {
             
         }
         
-        public void addItemToCart( Integer itemId, Integer userId )
+        public void addItemToCart( int itemId, int userId )
         {
             
         }
         
-        public void checkOutInventoryOrder( Integer userId )
+        public void checkOutInventoryOrder( int userId )
         {
             
         }
         
-        public projektas_2.MVC.Model.Order createInventoryOrder(  )
+        public Model.Order createInventoryOrder(  )
         {
             return null;
         }
@@ -39,17 +39,17 @@ namespace projektas_2.MVC.Controller
             
         }
         
-        public projektas_2.MVC.Model.Inventory[] getInventoryOrderList(  )
+        public Model.Inventory[] getInventoryOrderList(  )
         {
             return null;
         }
         
-        public projektas_2.MVC.Model.Inventory getInventoryOrderDetails( Integer id )
+        public Model.Inventory getInventoryOrderDetails( int id )
         {
             return null;
         }
         
-        public projektas_2.MVC.Model.Order getOrderDetails( Integer id )
+        public Model.Order getOrderDetails( int id )
         {
             return null;
         }
@@ -59,22 +59,22 @@ namespace projektas_2.MVC.Controller
             
         }
         
-        public projektas_2.MVC.Model.Order[] getOrders(  )
+        public Model.Order[] getOrders(  )
         {
             return null;
         }
         
-        public projektas_2.MVC.Model.Order createOrder( Integer id )
+        public Model.Order createOrder( int id )
         {
             return null;
         }
         
-        public void updateOrderState( Integer id )
+        public void updateOrderState( int id )
         {
             
         }
         
-        public Boolean canUpdate(  )
+        public bool canUpdate(  )
         {
             return null;
         }

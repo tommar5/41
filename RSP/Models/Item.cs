@@ -2,17 +2,17 @@
  * @(#) Item.cs
  */
 
-namespace projektas_2.MVC.Model
+namespace Model
 {
     public class Item
     {
-        String name;
+        string name;
         
-        String description;
+        string description;
         
         Inventory inventory;
         
-        String size;
+        string size;
         
         Supplier supplier;
         

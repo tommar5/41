@@ -2,18 +2,18 @@
  * @(#) ItemList.cs
  */
 
-namespace projektas_2.MVC.View.ItemManagement
+namespace View.ItemManagement
 {
     public class ItemList
     {
-        projektas_2.MVC.Controller.ItemController ItemController;
+        Controller.ItemController ItemController;
         
-        public void showItemList( projektas_2.MVC.Model.Item[] items )
+        public void showItemList( Model.Item[] items )
         {
             
         }
         
-        public projektas_2.MVC.Model.Item getItemDetails( Integer id )
+        public Model.Item getItemDetails( int id )
         {
             return null;
         }

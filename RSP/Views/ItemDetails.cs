@@ -2,23 +2,23 @@
  * @(#) ItemDetails.cs
  */
 
-namespace projektas_2.MVC.View.ItemManagement
+namespace View.ItemManagement
 {
     public class ItemDetails
     {
-        projektas_2.MVC.Controller.ItemController ItemController;
+        Controller.ItemController ItemController;
         
-        public void showItemDetails( projektas_2.MVC.Model.Item item )
+        public void showItemDetails( Model.Item item )
         {
             
         }
         
-        public projektas_2.MVC.Model.Item updateItem( projektas_2.MVC.Model.Item item )
+        public Model.Item updateItem( Model.Item item )
         {
             return null;
         }
         
-        public Integer deleteItem( Integer id )
+        public int deleteItem( int id )
         {
             return null;
         }
@@ -28,17 +28,17 @@ namespace projektas_2.MVC.View.ItemManagement
             
         }
         
-        public Boolean confirm(  )
+        public bool confirm(  )
         {
             return null;
         }
         
-        public projektas_2.MVC.Model.Item createNewItem( projektas_2.MVC.Model.Item item )
+        public Model.Item createNewItem( Model.Item item )
         {
             return null;
         }
         
-        public Integer addToCart( Integer itemId, Integer userId )
+        public int addToCart( int itemId, int userId )
         {
             return null;
         }

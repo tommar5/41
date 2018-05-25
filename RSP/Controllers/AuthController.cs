@@ -2,13 +2,13 @@
  * @(#) AuthController.cs
  */
 
-namespace projektas_2.MVC.Controller
+namespace RSP.Controllers
 {
     public class AuthController
     {
-        projektas_2.MVC.Model.User user;
+        Model.User user;
         
-        projektas_2.MVC.Model.Customer customer;
+        Model.Customer customer;
         
         public void logInUser(  )
         {

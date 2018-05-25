@@ -2,11 +2,11 @@
  * @(#) InventoryOrderDetails.cs
  */
 
-namespace projektas_2.MVC.View.InventoryManagement
+namespace View.InventoryManagement
 {
     public class InventoryOrderDetails
     {
-        projektas_2.MVC.Controller.OrderController OrderController;
+        Controller.OrderController OrderController;
         
         public void showOrderDetails(  )
         {

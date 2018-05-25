@@ -2,13 +2,13 @@
  * @(#) User.cs
  */
 
-namespace projektas_2.MVC.Model
+namespace Model
 {
     public class User
     {
-        String nickname;
+        string nickname;
         
-        String password;
+        string password;
         
         int last_log_date;
         
@@ -17,7 +17,7 @@ namespace projektas_2.MVC.Model
             
         }
         
-        public void removeUser( Integer id )
+        public void removeUser( int id )
         {
             
         }
@@ -32,7 +32,7 @@ namespace projektas_2.MVC.Model
             
         }
         
-        public void getUser( Integer id )
+        public void getUser( int id )
         {
             
         }

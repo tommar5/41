@@ -2,20 +2,20 @@
  * @(#) InventoryOrderList.cs
  */
 
-namespace projektas_2.MVC.View.InventoryManagement
+namespace View.InventoryManagement
 {
     public class InventoryOrderList
     {
-        projektas_2.MVC.Controller.CartController CartController;
+        Controller.CartController CartController;
         
-        projektas_2.MVC.Controller.OrderController OrderController;
+        Controller.OrderController OrderController;
         
         public void showInventoryOrderList(  )
         {
             
         }
         
-        public projektas_2.MVC.Model.Inventory getInventoryOrderDetails( Integer id )
+        public Model.Inventory getInventoryOrderDetails( int id )
         {
             return null;
         }
