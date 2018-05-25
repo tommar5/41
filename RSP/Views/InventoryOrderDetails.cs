@@ -6,7 +6,7 @@ namespace RSP.Views
 {
     public class InventoryOrderDetails
     {
-        Controller.OrderController OrderController;
+        Controllers.OrderController OrderController;
         
         public void showOrderDetails(  )
         {

@@ -6,9 +6,9 @@ namespace RSP.Controllers
 {
     public class AuthController
     {
-        Model.User user;
+        Models.User user;
         
-        Model.Customer customer;
+        Models.Customer customer;
         
         public void logInUser(  )
         {

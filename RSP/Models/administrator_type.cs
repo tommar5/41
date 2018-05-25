@@ -2,7 +2,7 @@
  * @(#) administrator_type.cs
  */
 
-namespace Model
+namespace RSP.Models
 {
     public enum administrator_type
     {

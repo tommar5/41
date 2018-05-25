@@ -20,7 +20,7 @@ namespace RSP.Views
         
         public int deleteItem( int id )
         {
-            return null;
+            return 1;
         }
         
         public void showConfirmationModal(  )
@@ -30,17 +30,17 @@ namespace RSP.Views
         
         public bool confirm(  )
         {
-            return null;
+            return true;
         }
         
-        public Model.Item createNewItem( Model.Item item )
+        public Models.Item createNewItem( Models.Item item )
         {
             return null;
         }
         
         public int addToCart( int itemId, int userId )
         {
-            return null;
+            return 1;
         }
         
     }

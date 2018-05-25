@@ -6,41 +6,41 @@ namespace RSP.Controllers
 {
     public class ItemController
     {
-        Model.Inventory Inventory;
+        Models.Inventory Inventory;
         
-        Model.Item Item;
+        Models.Item Item;
         
-        public Model.Item[] getItemList(  )
+        public Models.Item[] getItemList(  )
         {
             return null;
         }
         
-        public Model.Item getItemDetails( int id )
+        public Models.Item getItemDetails( int id )
         {
             return null;
         }
         
-        public int createItem( Model.Item item )
+        public int createItem( Models.Item item )
         {
-            return null;
+            return 1;
         }
         
         public int deleteItem( int id )
         {
-            return null;
+            return 1;
         }
         
-        public Model.Item updateItem( Model.Item item )
+        public Models.Item updateItem( Models.Item item )
         {
             return null;
         }
         
-        public Boolean checkIfValidItem( Model.Item item )
+        public bool checkIfValidItem( Models.Item item )
         {
-            return null;
+            return true;
         }
         
-        public projektas_2._Old.ItemManagement.Views.ItemDetails getCreatePage(  )
+        public Views.ItemDetails getCreatePage(  )
         {
             return null;
         }

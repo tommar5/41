@@ -6,14 +6,14 @@ namespace RSP.Controllers
 {
     public class InventoryController
     {
-        Model.Inventory Inventory;
+        Models.Inventory Inventory;
         
-        public Model.Inventory[] getInventoryList(  )
+        public Models.Inventory[] getInventoryList(  )
         {
             return null;
         }
         
-        public Model.Inventory getInventoryDetails( int id )
+        public Models.Inventory getInventoryDetails( int id )
         {
             return null;
         }

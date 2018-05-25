@@ -2,11 +2,11 @@
  * @(#) AuthMain.cs
  */
 
-namespace View.MainViews
+namespace RSP.Views
 {
     public class AuthMain
     {
-        Controller.AuthController authController;
+        Controllers.AuthController authController;
         
         public void loginUser(  )
         {

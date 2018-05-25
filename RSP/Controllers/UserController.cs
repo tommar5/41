@@ -6,13 +6,13 @@ namespace RSP.Controllers
 {
     public class UserController
     {
-        Model.User user;
+        Models.User user;
         
-        Model.Administrator administrator;
+        Models.Administrator administrator;
         
-        Model.Customer customer;
+        Models.Customer customer;
         
-        public void addUser( Model.User user )
+        public void addUser( Models.User user )
         {
             
         }
@@ -42,7 +42,7 @@ namespace RSP.Controllers
             
         }
         
-        public void isValid( Model.User user )
+        public void isValid( Models.User user )
         {
             
         }
