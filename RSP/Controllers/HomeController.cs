@@ -29,6 +29,7 @@ namespace RSP.Controllers
             return View();
         }
 
+        [Route("Home/Items")]
         public IActionResult Items()
         {
             ViewData["Message"] = "Item page.";
