@@ -29,6 +29,13 @@ namespace RSP.Controllers
             return View();
         }
 
+        public IActionResult Items()
+        {
+            ViewData["Message"] = "Item page.";
+
+            return View();
+        }
+
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });

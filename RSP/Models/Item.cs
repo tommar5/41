@@ -2,22 +2,22 @@
  * @(#) Item.cs
  */
 
+using System.ComponentModel.DataAnnotations;
+
 namespace RSP.Models
 {
     public class Item
     {
-        string name;
-        
-        string description;
-        
-        Inventory inventory;
-        
-        string size;
-        
-        Supplier supplier;
-        
-        Cart_Item cartItems;
-        
+        [Key]
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public string Size { get; set; }
+
+        //public Inventory Inventory { get; set; }
+        //public Supplier Supplier { get; set; }
+        //public Cart_Item CartItems { get; set; }
+
         public void select(  )
         {
             
