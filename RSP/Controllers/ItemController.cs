@@ -9,6 +9,7 @@ using RSP.Repositories;
 
 namespace RSP.Controllers
 {
+    [Route("item")]
     public class ItemController : Controller
     {
         private readonly IItemRepository _repository;
@@ -18,42 +19,19 @@ namespace RSP.Controllers
         }
         [HttpGet]
         [Produces(typeof(ItemDto[]))]
-        public async Task<IActionResult> ItemList(  )
+        public async Task<IActionResult> ItemList()
         {
             ViewData["ItemList"] = await _repository.GetItems();
-            return View("Items");
+            return View("ItemList");
         }
-        
-        public Models.Item getItemDetails( int id )
+
+        [HttpGet("{id}")]
+        [Produces(typeof(ItemDto))]
+        public async Task<IActionResult> ItemDetails([FromRoute] int id)
         {
-            return null;
+            var viewModel = await _repository.GetSingleItem(id);
+
+            return View("ItemDetails", viewModel);
         }
-        
-        public int createItem( Models.Item item )
-        {
-            return 1;
-        }
-        
-        public int deleteItem( int id )
-        {
-            return 1;
-        }
-        
-        public Models.Item updateItem( Models.Item item )
-        {
-            return null;
-        }
-        
-        public bool checkIfValidItem( Models.Item item )
-        {
-            return true;
-        }
-        
-        public Views.ItemDetails getCreatePage(  )
-        {
-            return null;
-        }
-        
     }
-    
 }

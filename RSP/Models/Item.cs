@@ -13,6 +13,7 @@ namespace RSP.Models
         public string Name { get; set; }
         public string Description { get; set; }
         public string Size { get; set; }
+        public float Price { get; set; }
 
         //public Inventory Inventory { get; set; }
         //public Supplier Supplier { get; set; }
