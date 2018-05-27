@@ -2,6 +2,7 @@
  * @(#) Item.cs
  */
 
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace RSP.Models
@@ -17,7 +18,7 @@ namespace RSP.Models
 
         //public Inventory Inventory { get; set; }
         //public Supplier Supplier { get; set; }
-        //public Cart_Item CartItems { get; set; }
+        public IList<Cart_Item> CartItems { get; set; }
 
         public void select(  )
         {

@@ -8,6 +8,11 @@ using RSP.Repositories;
 using RSP.Database;
 using RSP.Dtos;
 using RSP.Models;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Logging;
+using RSP.Controllers;
 
 namespace RSP.Repositories
 {
@@ -23,9 +28,13 @@ namespace RSP.Repositories
             _context = context;
             _mapper = mapper;
         }
-        public async Task<ICollection<CartItemDto>> GetCartItems()
+
+        public async Task<ICollection<CartItemDto>> GetCartItems(string userId)
         {
             var cartItems = await _cartCartItems
+                .Include(c => c.Item)
+                .Include(c => c.User)
+                .Where(c => c.UserId == userId)
                 .ToArrayAsync();
             return _mapper.Map<ICollection<Cart_Item>, ICollection<CartItemDto>>(cartItems);
         }

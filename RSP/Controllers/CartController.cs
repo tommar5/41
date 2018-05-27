@@ -3,26 +3,34 @@
  */
 
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using RSP.Dtos;
+using RSP.Models;
 using RSP.Repositories;
 
 namespace RSP.Controllers
 {
-    [Route("card")]
+    [Route("cart")]
     public class CartController : Controller
     {
+        private readonly UserManager<User> _userManager;
         private readonly ICartItemRepository _repository;
-        public CartController(ICartItemRepository repository)
+        public CartController(UserManager<User> userManager, ICartItemRepository repository)
         {
+            _userManager = userManager;
             _repository = repository;
         }
 
         [HttpGet]
+        [Authorize]
         [Produces(typeof(CartItemDto[]))]
-        public async Task<IActionResult> getCartList()
+        public async Task<IActionResult> CartList()
         {
-            ViewData["CartItemList"] = await _repository.GetCartItems();
+            var user = await _userManager.FindByNameAsync(User.Identity.Name);
+
+            ViewData["CartItemList"] = await _repository.GetCartItems(user.Id);
             return View("CartItemList");
         }
         public void addInventoryOrderToCart( int inventoryId, int userId )

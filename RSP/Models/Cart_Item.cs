@@ -12,10 +12,10 @@ namespace RSP.Models
         public int Id { get; set; }
         public string Type { get; set; }
         public int Number { get; set; }
-        public int UserId { get; set; }
-        public int ItemId { get; set; }
         public User User { get; set; }
+        public string UserId { get; set; }
         public Item Item { get; set; }
+        public int ItemId { get; set; }
 
         public void insert(  )
         {

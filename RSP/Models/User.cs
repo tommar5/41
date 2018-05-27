@@ -2,6 +2,7 @@
  * @(#) User.cs
  */
 
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Identity;
 
@@ -15,6 +16,7 @@ namespace RSP.Models
         public string LastName { get; set; }
         public string Nickname { get; set; }
         public int last_log_date { get; set; }
+        public IList<Cart_Item> CartItems { get; set; }
 
         public void addUser(  )
         {
