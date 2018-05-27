@@ -17,32 +17,5 @@ namespace RSP.Models
         public string Nickname { get; set; }
         public int last_log_date { get; set; }
         public IList<Cart_Item> CartItems { get; set; }
-
-        public void addUser(  )
-        {
-            
-        }
-        
-        public void removeUser( int id )
-        {
-            
-        }
-        
-        public void updateUser( User user )
-        {
-            
-        }
-        
-        public void getUsers(  )
-        {
-            
-        }
-        
-        public void getUser( int id )
-        {
-            
-        }
-        
     }
-    
 }

@@ -43,6 +43,7 @@ namespace RSP.Controllers
         }
 
         [Route("{id}/Delete")]
+        [Authorize]
         public async Task<RedirectToActionResult> Delete([FromRoute] int id)
         {
             await _repository.Delete(id);
@@ -50,6 +51,7 @@ namespace RSP.Controllers
         }
 
         [Route("{id}/Create")]
+        [Authorize]
         public async Task<RedirectToActionResult> Create([FromRoute] int itemId, [FromRoute] int? number)
         {
             var item = await _itemRepository.GetSingleItem(itemId);
@@ -70,57 +72,5 @@ namespace RSP.Controllers
             await _repository.Create(cartItem);
             return RedirectToAction("CartList");
         }
-
-        public void addInventoryOrderToCart( int inventoryId, int userId )
-        {
-            
-        }
-        
-        public Models.Cart_Item[] getInventoryOrderCartList( int userId )
-        {
-            return null;
-        }
-        
-        public void deleteInventoryOrderFromCart( int inventoryId, int userId )
-        {
-            
-        }
-        
-        public void addItemOrderToCart( int inventoryId, int userId )
-        {
-            
-        }
-        
-        public Models.Cart_Item[] getItemOrderCartList( int userId )
-        {
-            return null;
-        }
-        
-        public void deleteItemOrderFromCart( int inventoryId, int userId )
-        {
-            
-        }
-        
-        public void getItemCount(  )
-        {
-            
-        }
-        
-        public void removeFromCart( int id )
-        {
-            
-        }
-        
-        public void purgeCart(  )
-        {
-            
-        }
-        
-        public void updateItemCount( int id )
-        {
-            
-        }
-        
     }
-    
 }

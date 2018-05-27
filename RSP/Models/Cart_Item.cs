@@ -16,47 +16,5 @@ namespace RSP.Models
         public string UserId { get; set; }
         public Item Item { get; set; }
         public int ItemId { get; set; }
-
-        public void insert(  )
-        {
-            
-        }
-        
-        public void select(  )
-        {
-            
-        }
-        
-        public void delete(  )
-        {
-            
-        }
-        
-        public void count1(  )
-        {
-            
-        }
-        
-        public void find( int itemId, int userId )
-        {
-            
-        }
-        
-        public void increment( int itemId, int userId )
-        {
-            
-        }
-        
-        public void count(  )
-        {
-            
-        }
-        
-        public void changeAmount(  )
-        {
-            
-        }
-        
     }
-    
 }

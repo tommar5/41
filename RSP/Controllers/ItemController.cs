@@ -3,6 +3,7 @@
  */
 
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using RSP.Dtos;
@@ -26,6 +27,7 @@ namespace RSP.Controllers
 
        
         [HttpGet]
+        [Authorize]
         [Produces(typeof(ItemDto[]))]
         public async Task<IActionResult> ItemList()
         {
@@ -34,6 +36,7 @@ namespace RSP.Controllers
         }
 
         [HttpGet("{id}")]
+        [Authorize]
         [Produces(typeof(ItemDto))]
         public async Task<IActionResult> ItemDetails([FromRoute] int id)
         {
