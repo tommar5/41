@@ -2,20 +2,30 @@
  * @(#) Cart_Item.cs
  */
 
+using System.ComponentModel.DataAnnotations;
+
 namespace RSP.Models
 {
     public class Cart_Item
     {
-        Cart_Item cartItem;
-        
-        User user;
-        
-        string type;
-        
-        int number;
-        
-        Item item;
-        
+        //Cart_Item cartItem;
+
+        //User user;
+
+        //string type;
+
+        //int number;
+
+        //Item item;
+
+        [Key]
+        public int Id { get; set; }
+        public string Type { get; set; }
+        public int Number { get; set; }
+
+        public User User { get; set; }
+        public Item Item { get; set; }
+
         public void insert(  )
         {
             

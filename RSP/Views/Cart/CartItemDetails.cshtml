@@ -1,0 +1,42 @@
+﻿@model RSP.Dtos.ItemDto
+<h1>Item details page.</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-4 item-photo">
+            <img style="max-width:100%;" src="https://vignette.wikia.nocookie.net/max-steel-reboot/images/7/72/No_Image_Available.gif/revision/latest?cb=20130902173013" />
+        </div>
+        <div class="col-xs-5" style="border:0px solid gray">
+            <h3>@Model.Name</h3>
+            <h6 class="title-price"><small>Prekės kaina</small></h6>
+            <h3 style="margin-top:0px;">$ @Model.Price</h3>
+
+            <div class="section" style="padding-bottom:20px;">
+                <h6 class="title-attr"><small>Kiekis (todo)</small></h6>
+                <div>
+                    <div class="btn-minus"><span class="glyphicon glyphicon-minus"></span></div>
+                    <input value="1" />
+                    <div class="btn-plus"><span class="glyphicon glyphicon-plus"></span></div>
+                </div>
+            </div>
+
+            <div class="section" style="padding:20px;">
+                <button class="btn btn-success"><span style="margin-right:20px" class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>Dėti į krepšelį</button>
+            </div>
+        </div>
+        <div class="col-xs-9">
+            <ul class="menu-items">
+                <li class="active">Produkto aprašymas</li>
+            </ul>
+            <div style="width:100%;border-top:1px solid silver">
+                <p style="padding:15px;">
+                <p>
+                    Aprašymas: @Model.Description
+                </p>
+                <p>
+                    Svoris: @Model.Size
+                </p>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
