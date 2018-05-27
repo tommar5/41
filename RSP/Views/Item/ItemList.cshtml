@@ -12,7 +12,7 @@
                                 <h4 class="card-title">
                                     <a href="@Url.Action("ItemDetails", "Item", new { id = @item.Id })">@item.Name</a>
                                 </h4>
-                                <h5>$2.99</h5>
+                                <h5>$@item.Price</h5>
                                 <p class="card-text">@item.Description</p>
                             </div>
                         </div>

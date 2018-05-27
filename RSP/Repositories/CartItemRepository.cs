@@ -45,6 +45,30 @@ namespace RSP.Repositories
                 .SingleOrDefaultAsync(c => c.Id == id);
             return _mapper.Map<Cart_Item, CartItemDto>(cartItem);
         }
+
+        public async Task<CartItemDto> FindCartItem(int itemId, string userId)
+        {
+            var cartItem = await _cartCartItems
+                .Include(c => c.Item)
+                .Include(c => c.User)
+                .Where(c => c.Item.Id == itemId)
+                .Where(c => c.User.Id == userId)
+                .SingleOrDefaultAsync();
+            return _mapper.Map<Cart_Item, CartItemDto>(cartItem);
+        }
+
+        public async Task<float> GetSubtotal(string userId)
+        {
+            var sum = await _cartCartItems
+                .Include(c => c.Item)
+                .Include(c => c.User)
+                .Where(c => c.User.Id == userId)
+                .Select(c => c.Number * c.Item.Price)
+                .SumAsync();
+
+            return sum;
+        }
+
         public async Task<int> Create(Cart_Item cartItem)
         {
             await _cartCartItems.AddAsync(cartItem);

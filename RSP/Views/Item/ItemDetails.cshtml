@@ -20,7 +20,7 @@
             </div>
 
             <div class="section" style="padding:20px;">
-                <button class="btn btn-success"><span style="margin-right:20px" class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>Dėti į krepšelį</button>
+                <a  href="@Url.Action("Create", "Item", new { itemId = @Model.Id })" class="btn btn-success"><span style="margin-right:20px" class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>Dėti į krepšelį</a>
             </div>
         </div>
         <div class="col-xs-9">

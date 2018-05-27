@@ -11,6 +11,8 @@ namespace RSP.Repositories
     {
         Task<ICollection<CartItemDto>> GetCartItems(string userId);
         Task<CartItemDto> GetSingleCartItem(int id);
+        Task<CartItemDto> FindCartItem(int itemId, string userId);
+        Task<float> GetSubtotal(string userId);
         Task<int> Create(Cart_Item cart_item);
         Task<int> Edit(int id, int number);
         Task<int> Delete(int id);

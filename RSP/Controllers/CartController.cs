@@ -17,10 +17,16 @@ namespace RSP.Controllers
     {
         private readonly UserManager<User> _userManager;
         private readonly ICartItemRepository _repository;
-        public CartController(UserManager<User> userManager, ICartItemRepository repository)
+        private readonly IItemRepository _itemRepository;
+        public CartController(
+            UserManager<User> userManager,
+            ICartItemRepository repository,
+            IItemRepository itemRepository
+        )
         {
             _userManager = userManager;
             _repository = repository;
+            _itemRepository = itemRepository;
         }
 
         [HttpGet]
@@ -31,12 +37,37 @@ namespace RSP.Controllers
             var user = await _userManager.FindByNameAsync(User.Identity.Name);
 
             ViewData["CartItemList"] = await _repository.GetCartItems(user.Id);
+            ViewData["Subtotal"] = await _repository.GetSubtotal(user.Id);
+
             return View("CartItemList");
         }
+
         [Route("{id}/Delete")]
         public async Task<RedirectToActionResult> Delete([FromRoute] int id)
         {
             await _repository.Delete(id);
+            return RedirectToAction("CartList");
+        }
+
+        [Route("{id}/Create")]
+        public async Task<RedirectToActionResult> Create([FromRoute] int itemId, [FromRoute] int? number)
+        {
+            var item = await _itemRepository.GetSingleItem(itemId);
+            if (item == null)
+            {
+                return RedirectToAction("CartList");
+            }
+            var user = await _userManager.FindByNameAsync(User.Identity.Name);
+
+            var cartItem = new Cart_Item
+            {
+                ItemId = itemId,
+                UserId = user.Id,
+                Number = number ?? 1,
+                Type = "Tipas"
+            };
+
+            await _repository.Create(cartItem);
             return RedirectToAction("CartList");
         }
 
