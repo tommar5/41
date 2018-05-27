@@ -33,6 +33,13 @@ namespace RSP.Controllers
             ViewData["CartItemList"] = await _repository.GetCartItems(user.Id);
             return View("CartItemList");
         }
+        [Route("{id}/Delete")]
+        public async Task<RedirectToActionResult> Delete([FromRoute] int id)
+        {
+            await _repository.Delete(id);
+            return RedirectToAction("CartList");
+        }
+
         public void addInventoryOrderToCart( int inventoryId, int userId )
         {
             
