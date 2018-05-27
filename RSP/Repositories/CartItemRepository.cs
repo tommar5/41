@@ -13,50 +13,49 @@ namespace RSP.Repositories
 {
     public class CartItemRepository : ICartItemRepository
     {
-        private readonly DbSet<Cart_Item> _items;
+        private readonly DbSet<Cart_Item> _cartCartItems;
         private readonly RspDbContext _context;
         private readonly IMapper _mapper;
 
         public CartItemRepository(RspDbContext context, IMapper mapper)
         {
-            _items = context.Items;
+            _cartCartItems = context.CartItems;
             _context = context;
             _mapper = mapper;
         }
-        public async Task<ICollection<ItemDto>> GetItems()
+        public async Task<ICollection<CartItemDto>> GetCartItems()
         {
-            var items = await _items
+            var cartItems = await _cartCartItems
                 .ToArrayAsync();
-            //return items;
-            return _mapper.Map<ICollection<Item>, ICollection<ItemDto>>(items);
+            return _mapper.Map<ICollection<Cart_Item>, ICollection<CartItemDto>>(cartItems);
         }
 
-        public async Task<ItemDto> GetSingleItem(int id)
+        public async Task<CartItemDto> GetSingleCartItem(int id)
         {
-            var item = await _items
+            var cartItem = await _cartCartItems
                 .SingleOrDefaultAsync(c => c.Id == id);
-            return _mapper.Map<Item, ItemDto>(item);
+            return _mapper.Map<Cart_Item, CartItemDto>(cartItem);
         }
-        public async Task<int> Create(Item item)
+        public async Task<int> Create(Cart_Item cartItem)
         {
-            await _items.AddAsync(item);
+            await _cartCartItems.AddAsync(cartItem);
             await _context.SaveChangesAsync();
-            return item.Id;
+            return cartItem.Id;
         }
-        public async Task<int> Edit(int id, string description)
+        public async Task<int> Edit(int id, int number)
         {
-            var result = _items.Find(id);
+            var result = _cartCartItems.Find(id);
             if (result != null)
             {
-                result.Description = description;
+                result.Number = number;
                 await _context.SaveChangesAsync();
             }
             return id;
         }
         public async Task<int> Delete(int id)
         {
-            Item item = _items.Single(c => c.Id == id);
-            _items.Remove(item);
+            Cart_Item cartItem = _cartCartItems.Single(c => c.Id == id);
+            _cartCartItems.Remove(cartItem);
             await _context.SaveChangesAsync();
             return id;
         }

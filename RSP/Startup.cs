@@ -34,6 +34,7 @@ namespace RSP
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<IItemRepository, ItemRepository>();
+            services.AddScoped<ICartItemRepository, CartItemRepository>();
             services.AddScoped<IUserClaimsPrincipalFactory<User>, AppClaimsPrincipalFactory>();
             services.AddOptions();
             services.AddDbContext<RspDbContext>(options => options.UseSqlite("Filename=./ourDatabase.db"));

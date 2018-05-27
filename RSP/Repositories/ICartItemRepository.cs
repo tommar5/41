@@ -10,9 +10,9 @@ namespace RSP.Repositories
     public interface ICartItemRepository
     {
         Task<ICollection<CartItemDto>> GetCartItems();
-        Task<ItemDto> GetSingleCartItem(int id);
+        Task<CartItemDto> GetSingleCartItem(int id);
         Task<int> Create(Cart_Item cart_item);
-        Task<int> Edit(int id, String content);
+        Task<int> Edit(int id, int number);
         Task<int> Delete(int id);
     }
 }
