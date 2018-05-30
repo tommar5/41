@@ -2,6 +2,7 @@
  * @(#) CartController.cs
  */
 
+using System;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -16,16 +17,17 @@ namespace RSP.Controllers
     public class CartController : Controller
     {
         private readonly UserManager<User> _userManager;
-        private readonly ICartItemRepository _repository;
+        private readonly ICartItemRepository _cartItemRepository;
         private readonly IItemRepository _itemRepository;
+
         public CartController(
             UserManager<User> userManager,
-            ICartItemRepository repository,
+            ICartItemRepository cartItemRepository,
             IItemRepository itemRepository
         )
         {
             _userManager = userManager;
-            _repository = repository;
+            _cartItemRepository = cartItemRepository;
             _itemRepository = itemRepository;
         }
 
@@ -36,8 +38,8 @@ namespace RSP.Controllers
         {
             var user = await _userManager.FindByNameAsync(User.Identity.Name);
 
-            ViewData["CartItemList"] = await _repository.GetCartItems(user.Id);
-            ViewData["Subtotal"] = await _repository.GetSubtotal(user.Id);
+            ViewData["CartItemList"] = await _cartItemRepository.GetCartItems(user.Id);
+            ViewData["Subtotal"] = await _cartItemRepository.GetSubtotal(user.Id);
 
             return View("CartItemList");
         }
@@ -46,31 +48,38 @@ namespace RSP.Controllers
         [Authorize]
         public async Task<RedirectToActionResult> Delete([FromRoute] int id)
         {
-            await _repository.Delete(id);
+            await _cartItemRepository.Delete(id);
             return RedirectToAction("CartList");
         }
 
         [Route("{id}/Create")]
-        [Authorize]
-        public async Task<RedirectToActionResult> Create([FromRoute] int itemId, [FromRoute] int? number)
+        public async Task<RedirectToActionResult> AddItemToCart([FromRoute] int id, [FromRoute] int? number)
         {
-            var item = await _itemRepository.GetSingleItem(itemId);
+            var item = await _itemRepository.GetSingleItem(id);
             if (item == null)
             {
-                return RedirectToAction("CartList");
+                throw new Exception("Item was not found.");
             }
             var user = await _userManager.FindByNameAsync(User.Identity.Name);
-
-            var cartItem = new Cart_Item
+            var cartItemFromDb = await _cartItemRepository.GetCartItem(id, user.Id);
+            if (cartItemFromDb != null)
             {
-                ItemId = itemId,
-                UserId = user.Id,
-                Number = number ?? 1,
-                Type = "Tipas"
-            };
+                var newNumber = cartItemFromDb.Number + (number ?? 1);
+                await _cartItemRepository.EditCartItem(cartItemFromDb.Id, newNumber);
+            }
+            else
+            {
+                var cartItem = new Cart_Item
+                {
+                    ItemId = id,
+                    UserId = user.Id,
+                    Number = number ?? 1,
+                    Type = "Tipas"
+                };
+                await _cartItemRepository.Create(cartItem);
+            }
 
-            await _repository.Create(cartItem);
-            return RedirectToAction("CartList");
+            return RedirectToAction("ItemDetails", "Item");
         }
     }
 }

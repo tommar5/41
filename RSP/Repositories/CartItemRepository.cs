@@ -46,7 +46,7 @@ namespace RSP.Repositories
             return _mapper.Map<Cart_Item, CartItemDto>(cartItem);
         }
 
-        public async Task<CartItemDto> FindCartItem(int itemId, string userId)
+        public async Task<CartItemDto> GetCartItem(int itemId, string userId)
         {
             var cartItem = await _cartCartItems
                 .Include(c => c.Item)
@@ -75,7 +75,7 @@ namespace RSP.Repositories
             await _context.SaveChangesAsync();
             return cartItem.Id;
         }
-        public async Task<int> Edit(int id, int number)
+        public async Task<int> EditCartItem(int id, int number)
         {
             var result = _cartCartItems.Find(id);
             if (result != null)

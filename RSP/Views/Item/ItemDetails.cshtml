@@ -10,7 +10,7 @@
             <h6 class="title-price"><small>Prekės kaina</small></h6>
             <h3 style="margin-top:0px;">$ @Model.Price</h3>
             <div class="section" style="padding:20px;">
-                <a  href="@Url.Action("Create", "Item", new { itemId = @Model.Id })" class="btn btn-success"><span style="margin-right:20px" class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>Dėti į krepšelį</a>
+                <a  href="@Url.Action("AddItemToCart", "Cart", new { itemId = @Model.Id })" class="btn btn-success"><span style="margin-right:20px" class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>Dėti į krepšelį</a>
             </div>
         </div>
         <div class="col-xs-9">

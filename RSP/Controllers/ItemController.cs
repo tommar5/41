@@ -2,6 +2,7 @@
  * @(#) ItemController.cs
  */
 
+using System;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -51,25 +52,27 @@ namespace RSP.Controllers
             var item = await _repository.GetSingleItem(id);
             if (item == null)
             {
-                return RedirectToAction("ItemDetails");
+                throw new Exception("Item was not found.");
             }
             var user = await _userManager.FindByNameAsync(User.Identity.Name);
-            var cartItemFromDb = await _cartRepository.FindCartItem(id, user.Id);
+            var cartItemFromDb = await _cartRepository.GetCartItem(id, user.Id);
             if (cartItemFromDb != null)
             {
                 var newNumber = cartItemFromDb.Number + (number ?? 1);
-                await _cartRepository.Edit(cartItemFromDb.Id, newNumber);
-                return RedirectToAction("ItemDetails");
+                await _cartRepository.EditCartItem(cartItemFromDb.Id, newNumber);
             }
-            var cartItem = new Cart_Item
+            else
             {
-                ItemId = id,
-                UserId = user.Id,
-                Number = number ?? 1,
-                Type = "Tipas"
-            };
+                var cartItem = new Cart_Item
+                {
+                    ItemId = id,
+                    UserId = user.Id,
+                    Number = number ?? 1,
+                    Type = "Tipas"
+                };
+                await _cartRepository.Create(cartItem);
+            }
 
-            await _cartRepository.Create(cartItem);
             return RedirectToAction("ItemDetails");
         }
     }
