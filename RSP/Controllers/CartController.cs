@@ -19,6 +19,7 @@ namespace RSP.Controllers
         private readonly UserManager<User> _userManager;
         private readonly ICartItemRepository _cartItemRepository;
         private readonly IItemRepository _itemRepository;
+        public Func<string> GetUserName; //For testing
 
         public CartController(
             UserManager<User> userManager,
@@ -29,6 +30,8 @@ namespace RSP.Controllers
             _userManager = userManager;
             _cartItemRepository = cartItemRepository;
             _itemRepository = itemRepository;
+
+            GetUserName = () => User.Identity.Name;
         }
 
         [HttpGet]
@@ -60,7 +63,7 @@ namespace RSP.Controllers
             {
                 throw new Exception("Item was not found.");
             }
-            var user = await _userManager.FindByNameAsync(User.Identity.Name);
+            var user = await _userManager.FindByNameAsync(GetUserName());
             var cartItemFromDb = await _cartItemRepository.GetCartItem(id, user.Id);
             if (cartItemFromDb != null)
             {
