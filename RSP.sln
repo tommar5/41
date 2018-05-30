@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSP", "RSP\RSP.csproj", "{CE3FC65F-4F7E-4995-ADCC-813E0D316C9A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSP", "RSP\RSP.csproj", "{CE3FC65F-4F7E-4995-ADCC-813E0D316C9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSPTests", "RSPTests\RSPTests.csproj", "{2660748F-4B6D-4F68-96EE-DFBA5906585C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{CE3FC65F-4F7E-4995-ADCC-813E0D316C9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE3FC65F-4F7E-4995-ADCC-813E0D316C9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE3FC65F-4F7E-4995-ADCC-813E0D316C9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2660748F-4B6D-4F68-96EE-DFBA5906585C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2660748F-4B6D-4F68-96EE-DFBA5906585C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2660748F-4B6D-4F68-96EE-DFBA5906585C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2660748F-4B6D-4F68-96EE-DFBA5906585C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
