@@ -43,6 +43,11 @@ namespace RSP.Controllers
         {
             var viewModel = await _repository.GetSingleItem(id);
 
+            if (viewModel == null)
+            {
+                viewModel = await _repository.NotFound();
+            }
+
             return View("ItemDetails", viewModel);
         }
 

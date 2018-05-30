@@ -60,5 +60,18 @@ namespace RSP.Repositories
             await _context.SaveChangesAsync();
             return id;
         }
+
+        public async Task<ItemDto> NotFound()
+        {
+            var item = new ItemDto
+            {
+                Id = 999,
+                Name = "default",
+                Description = "default",
+                Size = "null",
+                Price = 0
+            };
+            return item;
+        }
     }
 }

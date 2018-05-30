@@ -14,5 +14,7 @@ namespace RSP.Dtos
         public string Description { get; set; }
         public string Size { get; set; }
         public float Price { get; set; }
+
+
     }
 }

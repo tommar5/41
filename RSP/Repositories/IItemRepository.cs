@@ -14,5 +14,6 @@ namespace RSP.Repositories
         Task<int> Create(Item item);
         Task<int> Edit(int id, String content);
         Task<int> Delete(int id);
+        Task<ItemDto> NotFound();
     }
 }
